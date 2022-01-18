@@ -1,0 +1,22 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+  max-http-header-size: 8192
+
+logging:
+  file:
+    name: app-info.log
+    path: logs
+
+# custom variables
+cl:
+  ingerencia:
+    hacker-news:
+      url: https://hn.algolia.com/api/v1
+      path: /search_by_date
